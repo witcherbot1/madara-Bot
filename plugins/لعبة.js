@@ -96,7 +96,7 @@ handler[_0x4be383(0x14)] = [_0x4be383(0xe)];
 handler[_0x4be383(0x6)] = /^(لعبة|العب)$/i;
 
 function _0x20a4() {
-    const _0x53e277 = ['*☠️ كسبتك! ❌*\x0a\x0a*👈🏻 انت: ', '*🥳 عاش كسبتني! 🎉*\x0a\x0a*👈🏻 انت: ', 'command', 'مقص', '391680NGgBLv', '501gLSMgw', '4508676MRjwMO', ' ورقه*\x0a*◉ ', '2722drZOCb', '11vgRUpp', 'games', 'exp', '*حجر 🗿, ورقه📄 𝐨 مقص ✂️*\x0a\x0a*—◉ أختار هشان تلعب مع تلبوت مثل:*\x0a*◉ ', '1767416qWstYv', 'ورقه', '*\x0a*❌ الخسائر -300 XP*', 'tags', 'reply', 'data', ' مقص*\x0aꨁ+201280244814\x0aꨁ*𝐍𝐀𝐑𝐔𝐓𝐎↳💧↲ 𝐁𝐎𝐓*', ' وقم بالعب مره اخري*', '*🕓  انتظر حتى', '14076770tjdvZO', '3280fabUyu', 'random', '20IgCFwh', '*\x0a*🎁 الجائزة +1000 XP*', 'sender', 'wait', 'floor', 'help', 'حجر', '*\x0a*👈🏻 البوت: ', 'users', '350396quUEbc', '8550vxkfsA', 'https://telegra.ph/file/c7924bf0e0d839290cc51.jpg'];
+    const _0x53e277 = ['*☠️ كسبتك! ❌*\x0a\x0a*👈🏻 انت: ', '*🥳 عاش كسبتني! 🎉*\x0a\x0a*👈🏻 انت: ', 'command', 'مقص', '391680NGgBLv', '501gLSMgw', '4508676MRjwMO', ' ورقه*\x0a*◉ ', '2722drZOCb', '11vgRUpp', 'games', 'exp', '*حجر 🗿, ورقه📄 𝐨 مقص ✂️*\x0a\x0a*—◉ أختار هشان تلعب مع تلبوت مثل:*\x0a*◉ ', '1767416qWstYv', 'ورقه', '*\x0a*❌ الخسائر -300 XP*', 'tags', 'reply', 'data', ' مقص*\x0aꨁ+201280244814\x0aꨁ*𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓*', ' وقم بالعب مره اخري*', '*🕓  انتظر حتى', '14076770tjdvZO', '3280fabUyu', 'random', '20IgCFwh', '*\x0a*🎁 الجائزة +1000 XP*', 'sender', 'wait', 'floor', 'help', 'حجر', '*\x0a*👈🏻 البوت: ', 'users', '350396quUEbc', '8550vxkfsA', 'https://telegra.ph/file/c7924bf0e0d839290cc51.jpg'];
     _0x20a4 = function () {
         return _0x53e277;
     };
