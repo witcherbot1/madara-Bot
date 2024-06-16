@@ -13,23 +13,9 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["573147616444", '𝙊𝙬𝙣𝙚𝙧 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-["593968585383"], 
-["5492266613038"], 
-["593968263524"],
-['5214434703586'],
-["33760536110"],
-["51906662557"],
-["50492280729"],
-["595976126756"],
-["201066826750"],
-["201033024135"],
-["51948705559"],
-["573012482597"],
-["573147616444"],
-["5215649706747"],
-["59175655964"],
-["5215539356057"]]
+["48699519605", '𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+["201280244814", '𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+]
 
 global.mods = []
 global.prems = []
@@ -174,7 +160,7 @@ global.exito = eg
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 global.wm = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 : 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨"
 global.igfg = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿"
-global.nomorown = "593993684821"
+global.nomorown = "⁦48699519605⁩"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -204,8 +190,8 @@ global.htka = "*☪ ••••̩̩͙⊰•⭑*"
 global.comienzo = "• • ◕◕════"
 global.fin = " • •"
 
-global.botdate = `⫹⫺ Date :  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}`; //Asia/Jakarta
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}`;//America/Los_Angeles
+global.botdate = `⫹⫺ التاريخ :  ${moment.tz('Egypt/Cairo').format('DD/MM/YY')}`; //Asia/Jakarta
+global.bottime = `🕐 الوقت : ${moment.tz('Egypt/Cairo').format('HH:mm:ss')}`;//America/Los_Angeles
 global.fgif = {
 key: {
 participant : '0@s.whatsapp.net'},
