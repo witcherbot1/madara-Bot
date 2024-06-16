@@ -9,15 +9,15 @@ let handler = async (m, { conn, command, usedPrefix }) => {
     }
     let src = await (await fetch('https://gist.githubusercontent.com/YosefZoro1/dc532a8c20e1ebe84e6dea44fab78956/raw/2dffa505b68d88a9b36c456e04dfa947a32d34b7/game3.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `*· • • ━━ ⌝🐉⌞ ━━ • • ·*
+    let caption = `*· • • ━━ ⌝🐢⌞ ━━ • • ·*
 *${command.toUpperCase()}*
 *🜋↫╎السـؤال ✍🏻⇜『من الاعب ال بالصورة』*
   *🜋↫╎الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)} ┇*
   *استخدم .انسحب للأنسحاب*
-  *🜋↫╎الـجـائزة💰↞ ${poin} نقاط┇*
-∞┇━━━ •🐉• ━━━┇∞
+  *🜋↫╎الـجـائزة💰↞ ${poin} دولار┇*
+∞┇━━━ •🐢• ━━━┇∞
 *✠ ~تــ✍︎ــوقــيــع ↯:~*
-『𝙕𝙊𝙍𝙊-𝘽𝙊𝙏』
+『𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓』
      `.trim()
     conn.tebakbendera[id] = [
         await conn.sendFile(m.chat, json.img, '', caption, m),
