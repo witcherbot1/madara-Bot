@@ -48,6 +48,8 @@ if (!m)
 return
 m.exp = 0
 m.limit = false
+m.bank = false
+m.dollar = false
 m.money = false
 try {
 // TODO: use loop to insert data instead of this
@@ -61,10 +63,12 @@ if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
+if (!isNumber(user.dollar)) user.dollar = 0
 if (!('premium' in user)) user.premium = false
 if (!('muto' in user)) user.muto = false
 if (!isNumber(user.joincount)) user.joincount = 1
 if (!isNumber(user.money)) user.money = 150
+if (!isNumber(user.bank)) user.bank = 150
 if (!isNumber(user.limit)) user.limit = 15 	       
 if (!('registered' in user)) user.registered = false
 if (!('registroR' in user)) user.registroR = false
@@ -104,7 +108,6 @@ if (!isNumber(user.stroberi)) user.stroberi = 0
 if (!isNumber(user.afk)) user.afk = -1
 //if (!('autolevelup' in user))  user.autolevelup = true
 if (!isNumber(user.reporte)) user.reporte = 0
-if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
 if (!isNumber(user.mesagge)) user.anakanjing = 0
@@ -621,6 +624,8 @@ emas: 0,
 emerald: 0,
 esteh: 0,
 exp: 0,
+dollar: 0,
+bank: 0,
 expg: 0,
 exphero: 0,
 expired: 0,
