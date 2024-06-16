@@ -16,7 +16,7 @@ throw false
 
 try {    
 if (command == 'acertijo' || command == 'acert' || command == 'adivinanza' || command == 'tekateki') {
-let tekateki = JSON.parse(fs.readFileSync(`./src/game/acertijo.json`))
+let tekateki = JSON.parse(fs.readFileSync(`./src/game/رياضه.json`))
 let json = tekateki[Math.floor(Math.random() * tekateki.length)]
 let _clue = json.response
 let clue = _clue.replace(/[A-Za-z]/g, '_')
@@ -133,7 +133,7 @@ m.reply('' + nyanya + '');
 console.log(e)}}
 handler.help = ['acertijo']
 handler.tags = ['game']
-handler.command = /^(acertijo|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|cancion|canción|palabra|word|ordenar|order|trivia|triviador|hint|pista)$/i
+handler.command = /^(رياضه|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|cancion|canción|palabra|word|ordenar|order|trivia|triviador|hint|pista)$/i
 
 export default handler
 
