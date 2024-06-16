@@ -7,7 +7,7 @@ let handler = async (_0x4f9075, {
   command: _0x4d8ac9
 }) => {
   if (!_0x378db0 && !(_0x4f9075.quoted && _0x4f9075.quoted.text)) {
-    throw "*أاكتب حاجة عشان ارد عليك بل gemini ياقلب ناروتو ⚡*\n\n*مثال:*\n*" + (_0x8563f + _0x4d8ac9) + " اكتب رمز JS*\n*ملاحظة الأمر هذا يمكنه قرأة الصور أيضا*\n";
+    throw "*أاكتب حاجة عشان ارد عليك بل gemini ياقلب مادارا ⚡*\n\n*مثال:*\n*" + (_0x8563f + _0x4d8ac9) + " اكتب رمز JS*\n*ملاحظة الأمر هذا يمكنه قرأة الصور أيضا*\n";
   }
   try {
     const _0x1429fb = encodeURIComponent(_0x378db0);
@@ -36,5 +36,5 @@ let handler = async (_0x4f9075, {
 };
 handler.help = ["googlegenai"];
 handler.tags = ['AI'];
-handler.command = ["AI", "ai", "gemini", 'gemini-2', "بوت"];
+handler.command = ["AI", "ai", "gemini", 'gemini-2', "جيمي"];
 export default handler;
