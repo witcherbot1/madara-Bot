@@ -1544,16 +1544,16 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 let msg = {
-rowner: lenguajeGB['smsRowner'](),
-owner: lenguajeGB['smsOwner'](),
-mods: lenguajeGB['smsMods'](),
-premium: lenguajeGB['smsPremium'](),
-group: lenguajeGB['smsGroup'](),
-private: lenguajeGB['smsPrivate'](),
-admin: lenguajeGB['smsAdmin'](),
-botAdmin: lenguajeGB['smsBotAdmin'](),
-unreg: lenguajeGB['smsUnreg'](),
-restrict: lenguajeGB['smsRestrict'](),
+owner: '*〔✘ هذا الـمـيـزة لـلـمـطـور فـقـط 〕*',
+rowner: '*〔✘ هذا الـمـيـزة لـلـمـطـور فـقـط 〕*',
+mods: '*〔✘ هذا الـمـيـزة لـلـمـطـور فـقـط 〕*',
+premium: '*〔✘ هــذا الامــر لـلأعــضــاء الـبـريــمــيــام فــقــط〕*',
+group: '*〔✘ هــذا الامــر فـي الـــجـــروبــات فــقــط〕*',
+private: '*〔✘ هــذا الامــر فـي الــخــاص فــقــط〕*',
+admin: '*〔✘ هــذا الامــر خــاص بـي مــشــرفــيــن الــجــروب〕*',
+botAdmin: '*〔✘ أجـعـل الـبـوت مـشـرف اولا〕*',
+unreg: '*〔لحظة !! انت لست مسجل〕*\n\n*〔سجل الامر لكي يتم تفعيله〕*\n*➣ #تسجيل*',
+restrict: '*〔✘ تــم تــوقــيــف هــذا الامــر بــواســطــت الــمــطــور〕*'
 }[type]
 	
 //if (msg) return m.reply(msg)
