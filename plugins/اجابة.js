@@ -1,40 +1,43 @@
 import similarity from 'similarity'
 
 const threshold = 0.72
-const dollar = 500 // تحديد قيمة الجائزة هنا
 
-export async function before(m) {
-    let id = m.chat
-    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !m.text || !/استخدم.*انسحب/i.test(m.quoted.text) || /.*hhint/i.test(m.text)) {
-        return !0
-    }
+let handler = m => m 
+handler.before = async function (m) {
 
-    this.tebakbendera = this.tebakbendera ? this.tebakbendera : {}
+//----------------------[adivina acertijo]----------------------
+  const id = m.chat;
+  if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0;
+  this.tekateki = this.tekateki ? this.tekateki : {};
+  if (!(id in this.tekateki)) return m.reply('Ese acertijo ya ha terminado!');
+  if (m.quoted.id == this.tekateki[id][0].id) {
+    const json = JSON.parse(JSON.stringify(this.tekateki[id][1]));
+    if (m.text.toLowerCase() == json.response.toLowerCase().trim()) {
+      global.db.data.users[m.sender].exp += this.tekateki[id][2];
+      m.reply(`*Respuesta correcta!*\n+${this.tekateki[id][2]} Exp`);
+      clearTimeout(this.tekateki[id][3]);
+      delete this.tekateki[id];
+    } else if (similarity(m.text.toLowerCase(), json.response.toLowerCase().trim()) >= threshold) m.reply(`Casi lo logras!`);
+    else m.reply('Respuesta incorrecta!');
+}
 
-    if (!(id in this.tebakbendera)) {
-        return this.reply(m.chat, 'الــســؤال خــلــص يــا احــول🐤', m)
-    }
-
-    if (m.quoted.id == this.tebakbendera[id][0].id) {
-        let isSurrender = /^(انسحب|surr?ender)$/i.test(m.text)
-        if (isSurrender) {
-            clearTimeout(this.tebakbendera[id][3])
-            delete this.tebakbendera[id]
-            return this.reply(m.chat, 'طلع فاشل و استسلم :( !', m)
-        }
-
-        let json = this.tebakbendera[id][1]
-
-        if (m.text.toLowerCase() === json.name.toLowerCase().trim()) {
-            global.db.data.users[m.sender].dollar += this.tebakbendera[id][2]
-            this.reply(m.chat, `*❐┃اجـابـة صـحـيـحـة┃✅ ❯*\n\n*❐↞┇الـجـائـزة💰↞${this.tebakbendera[id][2]} دولار 💵*`, m)
-            clearTimeout(this.tebakbendera[id][3])
-            delete this.tebakbendera[id]
-        } else if (similarity(m.text.toLowerCase(), json.name.toLowerCase().trim()) >= threshold) {
-            m.reply('*لقد كنت علي وشك النجاح*!')
-        } else {
-            this.reply(m.chat, '❐┃اجـابـة خـاطـئـة يــا بــاكــا┃❌ ❯', m)
-        }
+///----------------------[adivina la canción]----------------------
+    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/ADIVINA EL TITULO DE LA CANCION/i.test(m.quoted.text)) return !0;
+    this.tebaklagu = this.tebaklagu ? this.tebaklagu : {};
+    if (!(id in this.tebaklagu)) return m.reply('El juego ha terminado');
+    if (m.quoted.id == this.tebaklagu[id][0].id) {
+      const json = JSON.parse(JSON.stringify(this.tebaklagu[id][1]));
+      if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
+        global.db.data.users[m.sender].exp += this.tebaklagu[id][2];
+        m.reply(`✅Correcto!\n+${this.tebaklagu[id][2]} XP`);
+        clearTimeout(this.tebaklagu[id][3]);
+        delete this.tebaklagu[id];
+      } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold) m.reply(`Casii!`);
+      else m.reply(`❌Incorrecto!`);
     }
     return !0
 }
+
+handler.exp = 0
+
+export default handler;
