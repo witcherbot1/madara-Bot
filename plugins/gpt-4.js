@@ -36,5 +36,5 @@ let handler = async (_0x4f9075, {
 };
 handler.help = ["gpt-4"];
 handler.tags = ['AI'];
-handler.command = ["AIgpt_4", "aigpt_4", "gpt-4", 'ناروتو', "gpt"];
+handler.command = ["AIgpt_4", "aigpt_4", "gpt-4", 'مادارا', "gpt"];
 export default handler;
