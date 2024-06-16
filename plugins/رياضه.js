@@ -99,21 +99,22 @@ delete conn.tekateki[id]
 // Créditos a Katashi Fukushima
 // Créditos a Wilson Waoz
 if (command == 'trivia' || command == 'triviador') {
-let tekateki = JSON.parse(fs.readFileSync(`./src/game/رياضه.json`))
+let tekateki = JSON.parse(fs.readFileSync(`./src/game/trivia.json`))
 let json = tekateki[Math.floor(Math.random() * tekateki.length)]
 let _clue = json.response
 let clue = _clue.replace(/[A-Za-z]/g, '_')
 let caption = `
-ⷮ *${json.question}
+ⷮ *${json.question}*
 
-❐↞┇الـوقـت⏳↞ ${(timeout / 1000).toFixed(2)}┇
-❐↞┇الـجـائـزة💵↞ ${poin} دولار┇
-*『𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓』*
+*• Tiempo:* ${(timeout / 1000).toFixed(2)} segundos
+*• Bono:* +${poin} Exp
+
+💫 Responde a este mensaje con la letra de la opción correcta ✅
 `.trim()
 conn.tekateki[id] = [
 await conn.reply(m.chat, caption, m),
 json, poin, setTimeout(async () => {
-if (conn.tekateki[id]) await conn.reply(m.chat, `❮ ⌛┇انتهي الوقت┇⌛❯\n ❐↞┇الاجـابـة✅↞ ${json.response}┇`, conn.tekateki[id][0])
+if (conn.tekateki[id]) await conn.reply(m.chat, `Se acabó el tiempo!`, conn.tekateki[id][0])
 delete conn.tekateki[id]
 }, timeout)
 ]}
@@ -132,7 +133,7 @@ m.reply('' + nyanya + '');
 console.log(e)}}
 handler.help = ['acertijo']
 handler.tags = ['game']
-handler.command = /^(رياضة|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|cancion|canción|palabra|word|ordenar|order|trivia|triviador|hint|pista)$/i
+handler.command = /^(acertijo|acert|adivinanza|tekateki|advpe|adv|peliculas|pelicula|cancion|canción|palabra|word|ordenar|order|trivia|triviador|hint|pista)$/i
 
 export default handler
 
