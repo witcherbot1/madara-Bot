@@ -8,33 +8,33 @@ await conn.sendMessage(m.chat, { react: { text: '🐧', key: m.key } })
   }
 
    if (/^عبيط|يا عبيط|اهبل|غبي$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*بطل تنمر ياحب 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
+     conn.reply(m.chat, `*بطل تنمر يسطا 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
    }
    
    if (/^منور|منوره$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*احا ايه النور ده 🐦*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-await conn.sendMessage(m.chat, { react: { text: '😱', key: m.key } })
+     conn.reply(m.chat, `*بنوري 🥺💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
+await conn.sendMessage(m.chat, { react: { text: '🥺', key: m.key } })
    }
     if (/^مين عمك$/i.test(m.text) ) { //sem prefixo 
      conn.reply(m.chat, `*عمي هو هارلي لايت طبعا 🫶🏻💗*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 }
     if (/^بوت$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*بوت في عينك اسمي مادارا 😑💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*اسمي ناروتو ياورع 🗿💔*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
 }
 
  if (/^يابوت|يا بوت$/i.test(m.text) ) { //sem prefixo 
      conn.reply(m.chat, `*هممممم وش في انت كمان 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
-await conn.sendMessage(m.chat, { react: { text: '😑', key: m.key } })
+await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
  } 
 
-   if (/^مادارا$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat,'*عيون مادارا اتفضل 🦦💗*',m) //wm, null, [['Menu', '#menu']], m) botones :v
-await conn.sendMessage(m.chat, { react: { text: '🫶🏻', key: m.key } })
+   if (/^ناروتو$/i.test(m.text) ) { //sem prefixo 
+     conn.reply(m.chat,'*ها وش في تكلم🦦💗*',m) //wm, null, [['Menu', '#menu']], m) botones :v
+await conn.sendMessage(m.chat, { react: { text: '💗', key: m.key } })
    }
 
    if (/^بوت خرا|بوت زفت|خرا عليك$/i.test(m.text) ) { //sem prefixo
-     conn.reply(m.chat,'  *دزها يلا انا عمك 🗿*',m) //wm, null, [['Menu','#menu']], m) botones :v
+     conn.reply(m.chat,'  *🗿 دزها يلا انا عمك*',m) //wm, null, [['Menu','#menu']], m) botones :v
 
    }
  if (/^بحبك|احبك$/i.test(m.text) ) { //sem prefixo 
