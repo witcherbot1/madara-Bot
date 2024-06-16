@@ -106,7 +106,8 @@ if (!isNumber(user.stroberi)) user.stroberi = 0
 }
 	              		    
 if (!isNumber(user.afk)) user.afk = -1
-//if (!('autolevelup' in user))  user.autolevelup = true
+if (!('autolevelup' in user)) user.autolevelup = true;
+if (!('role' in user)) user.role = 'Novato';
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!isNumber(user.agility)) user.agility = 0
 if (!isNumber(user.anakanjing)) user.anakanjing = 0
@@ -563,7 +564,7 @@ armordurability: 0,
 armormonster: 0,
 as: 0,
 atm: 0,
-//autolevelup: true,
+autolevelup: true,
 axe: 0,
 axedurability: 0,
 ayam: 0,
