@@ -34,7 +34,7 @@ await conn.sendMessage(m.chat, { react: { text: '🫶🏻', key: m.key } })
    }
 
    if (/^بوت خرا|بوت زفت|خرا عليك$/i.test(m.text) ) { //sem prefixo
-     conn.reply(m.chat,'  *دزها يلا انا عمك 🗿*',m) //wm, null, [['Menu','#menu']], m) botones :v
+     conn.reply(m.chat,'*دزها يلا انا عمك 🗿*',m) //wm, null, [['Menu','#menu']], m) botones :v
 
    }
  if (/^بحبك|احبك$/i.test(m.text) ) { //sem prefixo 
