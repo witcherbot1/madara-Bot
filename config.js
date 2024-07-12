@@ -13,8 +13,7 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
-["48699519605", '𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-["201280244814", '𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓 💖🐈', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
+["972546887176", '𝐇𝐀𝐑𝐋𝐄𝐘 𝐋𝐈𝐆𝐇𝐓', true], //𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
 ]
 
 global.mods = []
@@ -45,7 +44,7 @@ global.confirmCode = "" // No tocar esto : Do not touch this line
 // ❰❰ IDIOMAS DISPONIBLES : AVAILABLE LANGUAGES ❱❱
 // Español 👉 es           
 // English 👉 en
-global.lenguajeGB = es
+global.lenguajeGB = ar
 global.mid = esDefault
 global.version_language = '1.0 (MID-GB)'
 
@@ -113,9 +112,9 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["201280244814", 'Gata Dios 💻', 1], 
-["48699519605", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
-["201009141531", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]]
+["972546887176", 'Gata Dios 💻', 1], 
+["972546887176", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
+["972546887176", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -132,7 +131,7 @@ global.author = ` ╭ 𝐌𝐀𝐃𝐀𝐑𝐀 𝐁𝐎𝐓 ✓\n ┃\n ┃ » S
 // [EN] > BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
 global.vsJB = "3.0 (Beta)"
-global.gt = "𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿"
+global.gt = "𝐌𝐀𝐃𝐀𝐑𝐀 𝐁𝐎𝐓"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -154,13 +153,13 @@ global.mal = mg
 global.eeg = '╰⊱📩⊱ *𝐑𝐄𝐏𝐎𝐑𝐓 | ابلاغ* ⊱📩⊱╮\n\n'
 global.envio = eeg
 
-global.eg = '╰⊱💚⊱ *تم بنجاح | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n'
+global.eg = '╰⊱💚⊱ *𝙎𝙐𝘾𝘾𝙀𝙎𝙎| تم بنجاح* ⊱💚⊱╮\n\n'
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 global.wm = "𝐌𝐀𝐃𝐀𝐑𝐀↳🤖↲𝐁𝐎𝐓"
 global.igfg = "𝐌𝐀𝐃𝐀𝐑𝐀↳🐢↲𝐁𝐎𝐓"
-global.nomorown = "⁦48699519605⁩"
+global.nomorown = "⁦972546887176⁩"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -190,8 +189,8 @@ global.htka = "*☪ ••••̩̩͙⊰•⭑*"
 global.comienzo = "• • ◕◕════"
 global.fin = " • •"
 
-global.botdate = `⫹⫺ التاريخ :  ${moment.tz('Egypt/Cairo').format('DD/MM/YY')}`; //Asia/Jakarta
-global.bottime = `🕐 الوقت : ${moment.tz('Egypt/Cairo').format('HH:mm:ss')}`;//America/Los_Angeles
+global.botdate = `⫹⫺ التاريخ :  ${moment.tz('Egypt/Cairo').format('DD/MM/YY')}`; //Egypt/Cairo
+global.bottime = `🕐 الوقت : ${moment.tz('Egypt/Cairo').format('HH:mm:ss')}`;//Egypt/Cairo
 global.fgif = {
 key: {
 participant : '0@s.whatsapp.net'},
