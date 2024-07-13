@@ -9,7 +9,7 @@ handler.all = async function (m) {
 global.key = ''
 
 // Cuentas
-const response = await fetch('https://raw.githubusercontent.com/mohamedkun15/My-api--XVI-games/main/Official%20accounts/Harly_light_official_accounts.json')  
+const response = await fetch('https://raw.githubusercontent.com/omar-lite/madara-Bot/master/plugins/mnnn.js?token=GHSAT0AAAAAACUSDJXNVXRQ4CWFG5MXXHNOZUR4WCA')  
 const data = await response.json()
 let { accounts, channels, groups, collaboration, sponsors, others } = data.info
 
