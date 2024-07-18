@@ -23,10 +23,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let more = String.fromCharCode(8206);
     let readMore = more.repeat(850);
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
-  await conn.sendMessage(m.chat, { react: { text: '🐢', key: m.key } })
+  await conn.sendMessage(m.chat, { react: { text: '🤖', key: m.key } })
   const harley = 'https://telegra.ph/file/c6931834b0cff16b54135.jpg'
  
-conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `alucard`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
+conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
 *مــرحــبــا بــك/ي* ${taguser}
 ╗──────¤مــعلـ🛖ـومــاتــك
 > •▫️مــســتــواك : ${level}
@@ -34,12 +34,9 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
 > •▫️رتــبــتــك : ${role}
 *• ──╾⊱﹝⚜️﹞⊰╼── •*
 ╗───¤مــعلــومــات الــ🤖بــوت
-> •إســم الــبــوت: مــادار🐢ــا 
-> •الــمــطــور : هــارلــي لايــت
-> •مــدة الــتــشــغــيل : ${uptime}
-*• ──╾⊱﹝⚜️﹞⊰╼── •*
-*~⌬ تــ✍︎ــوقــيــع ↡~*🖋️
-*⌞⚜️┊𝐒𝐩𝐞𝐞𝐝 ス 𝐊.𝐠.𝐦┊⚜️⌝*
+> إســم الــبــوت: ناروتو
+> الــمــطــور : هــارلــي لايــت
+> مــدة الــتــشــغــيل : ${uptime}
 *• ──╾⊱﹝⚜️﹞⊰╼── •*
 > Copyright © 2024 Harley`,subtitle: "HARLEY",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: harley } }, { upload: conn.waUploadToServer }, {quoted: m}))},nativeFlowMessage: { buttons: [
 
@@ -136,10 +133,6 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                     ]
                                 }),
                   messageParamsJson: ''
-                },
-                {
-              name: "quick_reply",
-              buttonParamsJson: '{"display_text":"⌈🚀╎الاشــتــراكــات╎🚀⌋","id":".بريميم"}'
                      },
                      {
                name: "cta_url",
